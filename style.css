@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Domine);
+
+body {
+    background-color: #162c4f;
+}
+
+.container {background-image: url('http://www.cray.com/blog/wp-content/uploads/2015/09/Weather-Blog-Image.jpg');
+background-position: center;
+height: 500px;
+width: 50%;
+margin-top: 100px;
+margin-left:375px;
+text-align: center; 
+font-family:Domine}
+
+.title   {
+padding-top: 150px;
+color: red;
+font-size: 3em;}
+
+.subtitle   {color: red;}
+
+.weather-info {color: red;}
+
+.info {color: yellow; font-size: 1.5em;}
