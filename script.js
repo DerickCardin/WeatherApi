@@ -45,23 +45,24 @@ window.onload = function() {
   getLocation();
 };
 
-function celsiusToFarenheit(celsius) {
+function cToF(celsius) {
   return celsius * 9 / 5 + 32;
 }
 
-function farenheitToCelsius(fahrenheit) {
+function fToC(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
 }
 
-function toggleTemp() {
-  if (temScale.innerHTML === "Celsius") {
-    temNum.innerHTML = celsiusToFarenheit(temNum.innerHTML).toFixed(2);
-    temScale.innerHTML = "Farenheit";
-  } else if (temScale.innerHTML === 'Farenheit') {
-    temNum.innerHTML = farenheitToCelsius(temNum.innerHTML).toFixed(2);
-    temScale.innerHTML = "Celsius";
+function toggleScale() {
+  if (temScale.innerHTML === "C") {
+    temNum.innerHTML = cToF(temNum.innerHTML).toFixed(2);
+    temScale.innerHTML = "F";
+  } else if (temScale.innerHTML === 'F') {
+    temNum.innerHTML = fToC(temNum.innerHTML).toFixed(2);
+    temScale.innerHTML = "C";
   }
 }
+
 
 temScale.addEventListener("click", toggleScale);
 
